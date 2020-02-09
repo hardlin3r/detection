@@ -28,6 +28,10 @@ pip install -r requirements.txt
 python3 manage.py runserver
 ```
 
+### Examples of images processed by detector
+
+Are in folder results
+
 ## Built With
 
 * [Django](https://www.djangoproject.com/) - The web framework used
