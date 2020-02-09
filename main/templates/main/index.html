@@ -10,11 +10,9 @@
     <a href='/'><h1 class='text-center'>Image detector</h1></a>
   </header>
   <main class='container'>
-    <div class="py-5 text-center">
-      <h2>Upload jpeg image for detection</h2>
-    </div>
     <div class="row">
       <div class="col-md-4 offset-md-4">
+        <h4 class="mb-3">Upload jpeg image for detection</h2>
         <form action="img/" method = "post" enctype="multipart/form-data">
           {% csrf_token %}
           {{ form.as_p }}

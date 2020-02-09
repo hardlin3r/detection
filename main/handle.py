@@ -57,7 +57,7 @@ def handle_uploaded_file(file):
   img = torch.from_numpy(img_numpy.astype('float32')).permute(2,0,1)
   img = img/255.
   predictions = model(img[None,...])
-  CONF_THRESH = 0.5
+  CONF_THRESH = 0.8
   boxes = predictions[0]['boxes'][predictions[0]['scores'] > CONF_THRESH]
   labels = predictions[0]['labels'][predictions[0]['scores'] > CONF_THRESH]
   boxes_dict = {}
