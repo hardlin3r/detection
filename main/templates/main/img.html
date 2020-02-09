@@ -3,14 +3,32 @@
 <head>
 	<meta charset="UTF-8">
   <title>Image Detection</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style>
     .image {
-      width: 100%;
+      max-width: 80%;
+      max-height: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
-  <h1>Result</h1>
-  <img class="image" src="../../static/main/images/{{fname}}.jpeg" alt="{{fname}}"/>
+  <header class='container'>
+    <a href='/'><h1 class='text-center'>Image detector</h1></a>
+  </header>
+  <main class='container'>
+    <div class="py-5 text-center">
+      <h2>Result</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <img class="image" src="../../static/main/images/{{fname}}.jpeg" alt="{{fname}}"/>
+      </div>
+    </div>
+  </main>
+  <footer>
+  </footer>
 </body>
 </html>
